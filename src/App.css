@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Waterfall);
+
+.app {
+  height: 100%;
+  padding: 0 100px 0 100px;
+}
+
+.header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.header_title {
+  font-family: Waterfall;
+  font-size: 60px;
+  margin-bottom: 14px; /* TODO: placeholder */
+}
+
+.header_tabs {
+  display: flex;
+  align-items: center;
+}
+
+.header_tabs-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.body {
+  background-color: orange;
+}
+
+.footer {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_name {
+  font-size: 20px;
+}
+
+.footer_source {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_source:hover {
+  text-decoration: underline;
+}
