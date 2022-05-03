@@ -16,7 +16,7 @@
 .header_title {
   font-family: Waterfall;
   font-size: 60px;
-  margin-bottom: 14px; /* TODO: placeholder */
+  margin-bottom: 14px; /* TODO placeholder */
 }
 
 .header_tabs {
@@ -24,10 +24,16 @@
   align-items: center;
 }
 
-.header_tabs-text {
+.header_link {
   font-size: 28px;
   font-weight: bold;
   margin-left: 30px;
+  text-decoration: none;
+  color: var(--header_link-color);
+}
+
+.header_link:hover {
+  color: var(--header_link_hover-color);
 }
 
 .body {

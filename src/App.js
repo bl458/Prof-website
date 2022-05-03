@@ -1,18 +1,56 @@
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+
+import About from "./About";
+import Projects from "./Projects";
+
 import "./App.css";
 
-function App() {
+// TODO writing
+export default function App() {
+  const location = useLocation();
+
+  const getHeaderLinkColor = (linkName) => {
+    if (location["pathname"] === linkName) {
+      return "#f76540";
+    }
+
+    return "#141414";
+  };
+
   return (
     <div className="app">
       <div className="header">
         <p className="header_title">michaellim</p>
         <div className="header_tabs">
-          <p className="header_tabs-text">About</p>
-          <p className="header_tabs-text">Projects</p>
-          <p className="header_tabs-text">Writing</p>
+          <Link
+            to="/"
+            className="header_link"
+            style={{
+              "--header_link-color": getHeaderLinkColor("/"),
+              "--header_link_hover-color": "#f76540",
+            }}
+          >
+            About
+          </Link>
+          <Link
+            to="projects"
+            className="header_link"
+            style={{
+              "--header_link-color": getHeaderLinkColor("/projects"),
+              "--header_link_hover-color": "#f76540",
+            }}
+          >
+            Projects
+          </Link>
         </div>
       </div>
 
-      <div className="body"></div>
+      <main className="body">
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </main>
 
       <div className="footer">
         <p className="footer_name">© 2020 Michael Lim</p>
@@ -26,5 +64,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
