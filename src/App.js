@@ -57,12 +57,14 @@ export default function App() {
 
         <div className="footer">
           <p className="footer_name">© 2020 Michael Lim</p>
-          <a
-            className="footer_source"
-            href="https://github.com/bl458/Prof-website"
-          >
-            Source
-          </a>
+          <p>
+            <a
+              href="https://github.com/bl458/Prof-website"
+              className="footer_source"
+            >
+              Source
+            </a>
+          </p>
         </div>
       </div>
     </div>
