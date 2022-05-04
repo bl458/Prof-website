@@ -56,15 +56,36 @@ export default function App() {
         </main>
 
         <div className="footer">
-          <p className="footer_name">© 2020 Michael Lim</p>
-          <p>
-            <a
-              href="https://github.com/bl458/Prof-website"
-              className="footer_source"
-            >
-              Source
+          <div className="footer_text-wrap">
+            <p className="footer_name">© 2020 Michael Lim</p>
+            <p>
+              <a
+                href="https://github.com/bl458/Prof-website"
+                className="footer_source"
+              >
+                Source
+              </a>
+            </p>
+          </div>
+
+          <div className="footer_contact-wrap">
+            <a href="mailto: bl458@cornell.edu" className="footer_contact-img">
+              <img
+                src="https://bclim1.s3.us-east-2.amazonaws.com/mail.png"
+                alt=""
+                width="100%"
+                height="100%"
+              />
             </a>
-          </p>
+            <a href="https://github.com/bl458" className="footer_contact-img">
+              <img
+                src="https://bclim1.s3.us-east-2.amazonaws.com/github.png"
+                alt=""
+                width="100%"
+                height="100%"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
