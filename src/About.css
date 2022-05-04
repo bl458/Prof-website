@@ -1,19 +1,41 @@
 .about {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 
 .photo {
-  width: 220px;
-  border-radius: 110px;
+  width: 200px;
+  border-radius: 100px;
   aspect-ratio: 1;
 }
 
 .intro {
-  font-size: 18px;
-  line-height: 28px;
-  margin-left: 60px;
+  font-size: 17px;
+  line-height: 25px;
+  margin-left: 50px;
 }
+
+@media screen and (max-width: 1410px) {
+  .about {
+    width: 90%;
+  }
+
+  .photo {
+    width: 180px;
+    border-radius: 90px;
+  }
+
+  .intro {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 40px;
+  }
+}
+/* 
+@media screen and (max-width: 1310px) {
+ 
+} */

@@ -3,17 +3,18 @@
 
 .app {
   /* background-color: green; */
+  min-width: 760px;
   width: 100%;
   height: 60%;
   min-height: 600px;
   display: flex;
   justify-content: center;
+  padding: 0 30px 0 30px;
 }
 
 .app_inner {
   /* background-color: green; */
   width: 60%;
-  min-width: 660px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@
 
 .header_link {
   font-family: IBM Plex Sans;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   margin-left: 24px;
   text-decoration: none;
@@ -89,7 +90,7 @@
 .footer_contact-img {
   height: 60%;
   aspect-ratio: 1;
-  margin-left: 4px;
+  margin-left: 7px;
 }
 
 .footer_contact-img:hover {
@@ -97,11 +98,11 @@
 }
 
 .footer_name {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer_source {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   text-decoration: none;
   color: inherit;
@@ -110,4 +111,16 @@
 .footer_source:hover {
   text-decoration: underline;
   color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+  .app_inner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app_inner {
+    width: 90%;
+  }
 }

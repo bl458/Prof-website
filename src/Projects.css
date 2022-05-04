@@ -13,7 +13,7 @@
 }
 
 .projects_title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   margin: 20px 0 20px 0;
 }
@@ -68,6 +68,7 @@
 
 .projects_card-detail {
   font-size: 14px;
+  line-height: 20px;
 }
 
 .projects_card-learn {
