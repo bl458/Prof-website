@@ -19,47 +19,51 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="header">
-        <p className="header_title">michaellim</p>
-        <div className="header_tabs">
-          <Link
-            to="/"
-            className="header_link"
-            style={{
-              "--header_link-color": getHeaderLinkColor("/"),
-              "--header_link_hover-color": "#f76540",
-            }}
-          >
-            About
+      <div className="app_inner">
+        <div className="header">
+          <Link to="/" className="header_title">
+            michaellim
           </Link>
-          <Link
-            to="projects"
-            className="header_link"
-            style={{
-              "--header_link-color": getHeaderLinkColor("/projects"),
-              "--header_link_hover-color": "#f76540",
-            }}
-          >
-            Projects
-          </Link>
+          <div className="header_tabs">
+            <Link
+              to="/"
+              className="header_link"
+              style={{
+                "--header_link-color": getHeaderLinkColor("/"),
+                "--header_link_hover-color": "#f76540",
+              }}
+            >
+              About
+            </Link>
+            <Link
+              to="projects"
+              className="header_link"
+              style={{
+                "--header_link-color": getHeaderLinkColor("/projects"),
+                "--header_link_hover-color": "#f76540",
+              }}
+            >
+              Projects
+            </Link>
+          </div>
         </div>
-      </div>
 
-      <main className="body">
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </main>
+        <div className="body">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
 
-      <div className="footer">
-        <p className="footer_name">© 2020 Michael Lim</p>
-        <a
-          className="footer_source"
-          href="https://github.com/bl458/Prof-website"
-        >
-          Source
-        </a>
+        <div className="footer">
+          <p className="footer_name">© 2020 Michael Lim</p>
+          <a
+            className="footer_source"
+            href="https://github.com/bl458/Prof-website"
+          >
+            Source
+          </a>
+        </div>
       </div>
     </div>
   );
