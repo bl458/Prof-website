@@ -15,3 +15,7 @@ a {
   padding: 0;
   font-family: IBM Plex Sans;
 }
+
+* {
+  box-sizing: border-box;
+}

@@ -48,12 +48,12 @@ export default function App() {
           </div>
         </div>
 
-        <div className="body">
+        <main className="body">
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-        </div>
+        </main>
 
         <div className="footer">
           <p className="footer_name">© 2020 Michael Lim</p>
