@@ -79,6 +79,8 @@ export default function App() {
             <p className="footer_name">© 2020 Michael Lim</p>
             <p>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://github.com/bl458/Prof-website"
                 className="footer_source"
               >
