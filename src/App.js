@@ -2,10 +2,18 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 import "./App.css";
 
-// TODO writing
+/* TODO 
+1. Edit about me 
+  - add proficient languages 
+  - add resume 
+2. Contact me page 
+  - add form 
+3. Add linkedin link 
+*/
 export default function App() {
   const location = useLocation();
 
@@ -45,6 +53,16 @@ export default function App() {
             >
               Projects
             </Link>
+            <Link
+              to="contact"
+              className="header_link"
+              style={{
+                "--header_link-color": getHeaderLinkColor("/contact"),
+                "--header_link_hover-color": "#f76540",
+              }}
+            >
+              Contact
+            </Link>
           </div>
         </div>
 
@@ -52,6 +70,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 
@@ -69,7 +88,12 @@ export default function App() {
           </div>
 
           <div className="footer_contact-wrap">
-            <a href="mailto: bl458@cornell.edu" className="footer_contact-img">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto: bl458@cornell.edu"
+              className="footer_contact-img"
+            >
               <img
                 src="https://bclim1.s3.us-east-2.amazonaws.com/mail.png"
                 alt=""
@@ -77,9 +101,27 @@ export default function App() {
                 height="100%"
               />
             </a>
-            <a href="https://github.com/bl458" className="footer_contact-img">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/bl458"
+              className="footer_contact-img"
+            >
               <img
                 src="https://bclim1.s3.us-east-2.amazonaws.com/github.png"
+                alt=""
+                width="100%"
+                height="100%"
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/michael-byungchan-lim-629889126/"
+              className="footer_contact-img"
+            >
+              <img
+                src="https://bclim1.s3.us-east-2.amazonaws.com/linkedin.png"
                 alt=""
                 width="100%"
                 height="100%"
