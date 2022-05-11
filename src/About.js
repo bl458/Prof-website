@@ -24,7 +24,7 @@ export default function About() {
         <br />
         <br />
         Check out my past{" "}
-        <a href="projects" className="about_intro-link">
+        <a href="https://github.com/bl458" className="about_intro-link">
           projects
         </a>{" "}
         and feel free to{" "}
