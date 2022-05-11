@@ -19,6 +19,11 @@
   margin-left: 50px;
 }
 
+.about_intro-link {
+  text-decoration: none;
+  color: #f76540;
+}
+
 @media screen and (max-width: 1410px) {
   .about {
     width: 90%;

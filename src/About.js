@@ -17,7 +17,21 @@ export default function About() {
         My hobbies are playing the piano and biking.
         <br />
         <br />
-        Check out my past projects and feel free to connect!
+        Here is my{" "}
+        <a href="/resume.pdf" className="about_intro-link" target="_blank">
+          resume.
+        </a>
+        <br />
+        <br />
+        Check out my past{" "}
+        <a href="projects" className="about_intro-link">
+          projects
+        </a>{" "}
+        and feel free to{" "}
+        <a href="contact" className="about_intro-link">
+          connect
+        </a>
+        !
       </p>
     </div>
   );
