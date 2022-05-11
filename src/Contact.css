@@ -1,0 +1,18 @@
+.contact_text {
+  font-size: 17px;
+  line-height: 25px;
+  color: black;
+}
+
+.contact_link {
+  text-decoration: none;
+  color: #f76540;
+}
+
+@media screen and (max-width: 1410px) {
+  .contact_text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 40px;
+  }
+}
